@@ -1,0 +1,32 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: waka.session::userkey.form_name
+
+# Model Form Field configuration
+form: $/waka/session/models/userkey/fields.yaml
+
+# Model Class name
+modelClass: Waka\Session\Models\UserKey
+
+# Default redirect location
+defaultRedirect: waka/session/userkeys
+
+# Create page
+create:
+    title: waka.session::userkey.create
+    redirect: waka/session/userkeys/update/:id
+    redirectClose: waka/session/userkeys
+    form: $/waka/session/models/userkey/fields_create.yaml
+
+# Update page
+update:
+    title: waka.session::userkey.update
+    redirect: waka/session/userkeys/update/:id
+    redirectClose: waka/session/userkeys
+
+# Preview page
+preview:
+    title: waka.session::userkey.preview_name

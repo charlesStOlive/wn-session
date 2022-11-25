@@ -1,0 +1,54 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    name:
+        label: waka.session::userkey.name
+        span: auto
+    slug:
+        label: waka.session::userkey.slug
+        span: auto
+    key_end_at:
+        label: waka.session::userkey.key_end_at
+        span: auto
+        type: datepicker
+        mode: date
+        ignoreTimezone: true
+    waka_session:
+        label: waka.session::userkey.waka_session
+        span: auto
+        type: relation
+        placeholder: waka.utils::lang.global.placeholder
+        nameFrom: name
+    owner:
+        label: waka.session::userkey.owner
+        span: auto
+    secret:
+        label: waka.session::userkey.secret
+        span: auto
+    _dataToString:
+        label: waka.session::userkey._dataToString
+        span: auto
+        type: codeeditor
+        language: yaml
+    file:
+        label: waka.session::userkey.file
+        span: left
+        type: fileupload
+        mode: file
+    files:
+        label: waka.session::userkey.files
+        span: right
+        type: fileupload
+        mode: file
+    image:
+        label: waka.session::userkey.image
+        span: left
+        type: fileupload
+        mode: image
+    images:
+        label: waka.session::userkey.images
+        span: right
+        type: fileupload
+        mode: image

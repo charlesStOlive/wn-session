@@ -1,0 +1,14 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    url:
+        label: waka.session::wakasession.url
+        span: auto
+    key_duration:
+        label: waka.session::wakasession.key_duration
+        span: auto
+        type: dropdown
+        placeholder: waka.utils::lang.global.placeholder
+        options: listDurations

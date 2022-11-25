@@ -1,0 +1,8 @@
+'1.0.0':
+    - 'First version of Session'
+    - create_user_keys_table.php
+    - create_waka_sessions_table.php
+'1.1.0':
+    - 'Ajout dseable'
+    - create_user_keys_table_u110.php
+    - change_users_keys_table_u110.php

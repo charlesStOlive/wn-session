@@ -1,0 +1,61 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    name:
+        label: waka.session::wakasession.name
+        span: auto
+    key_duration:
+        label: waka.session::wakasession.key_duration
+        span: auto
+        type: dropdown
+        placeholder: waka.utils::lang.global.placeholder
+        options: listDurations
+    has_ds:
+        label: waka.session::wakasession.has_ds
+        span: left
+        type: switch
+    _warn_ds@update:
+        type: hint
+        path: ~/plugins/waka/session/models/wakasession/hint.htm
+    data_source:
+        label: waka.session::wakasession.data_source
+        span: left
+        type: dropdown
+        placeholder: waka.utils::lang.global.placeholder
+        options: listDataSource
+        trigger:
+            action: show
+            field: has_ds
+            condition: checked
+    ds_id_test:
+        label: waka.programer::campagne.tests_ids
+        span: right
+        type: wakafinder
+        dependsOn: [data_source]
+        recordsPerPage: 10
+        title: Choisissez un test
+        prompt: Cliquez pour trouver un contact
+        keyFrom: id
+        nameFrom: name
+        descriptionFrom: email
+        searchMode: all
+        useRelation: false
+        trigger:
+            action: show
+            field: has_ds
+            condition: checked
+    embed_all_ds:
+        label: waka.session::wakasession.embed_all_ds
+        span: full
+        type: checkbox
+        comment: waka.session::wakasession.embed_all_ds_com
+    mapping:
+        label: waka.session::wakasession.mapping
+        span: full
+        type: codeeditor
+        language: yaml
+    url:
+        label: waka.session::wakasession.url
+        span: auto
