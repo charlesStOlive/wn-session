@@ -6,3 +6,6 @@
     - 'Ajout dseable'
     - create_user_keys_table_u110.php
     - change_users_keys_table_u110.php
+'1.1.1':
+    - 'transformation ds_id_test en string'
+    - change_waka_sessions_table_u111.php
