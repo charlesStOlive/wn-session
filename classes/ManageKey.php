@@ -21,7 +21,7 @@ class ManageKey
             $userKey->name = \Waka\Utils\Classes\TinyUuid::generate(5);
             if ($data_source = $session->data_source) {
                 $data_source = \Datasources::find($data_source);
-                $userKey->dseable_type = $data_source->class;
+                $userKey->dseable_type = self::checkMorphMap($data_source->class);
                 $userKey->dseable_id = $userKey->ds_id =  $dsId;
             }
             $userKey->data = $data;
@@ -54,4 +54,24 @@ class ManageKey
 
         return $query;
     }
+
+    public static function checkMorphMap($className, $name = false) {
+        if(!$className) return;
+        if (substr($className, 0, 1) === "\\") {
+            $className = substr($className, 1);
+        }
+        $morphClassMaps = \Winter\Storm\Database\Relations\Relation::morphMap();
+        foreach($morphClassMaps as $morphName=>$morphClass) {
+            // trace_log($morphClass ."  ==  ".$className."  ==  ".$morphName);
+            if($morphClass ==  $className)  {
+                return $name ? $morphName : $morphClass;
+            } else if($morphName ==  $className)  {
+                return $name ? $morphName : $morphClass;
+            } 
+           
+        }
+         return $className;
+    }
+
+
 }
