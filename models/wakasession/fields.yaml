@@ -30,7 +30,7 @@ fields:
             field: has_ds
             condition: checked
     ds_id_test:
-        label: waka.programer::campagne.tests_ids
+        label: waka.session::wakasession.ds_id_test
         span: right
         type: wakafinder
         dependsOn: [data_source]
