@@ -80,13 +80,6 @@ class Plugin extends PluginBase
     {
         return []; // Remove this line to activate
 
-        return [
-            'waka.session.some_permission' => [
-                'tab' => 'waka.session::lang.plugin.name',
-                'label' => 'waka.session::lang.permissions.some_permission',
-                'roles' => [UserRole::CODE_DEVELOPER, UserRole::CODE_PUBLISHER],
-            ],
-        ];
     }
 
     /**
