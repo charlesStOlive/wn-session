@@ -120,7 +120,7 @@ class WakaSession extends Model
      **/
     public function listDurations()
     {
-        return \Config::get('waka.lp::durations');
+        return \Config::get('waka.session::durations');
     }
 
     /**
