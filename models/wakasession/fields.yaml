@@ -4,23 +4,23 @@
 
 fields:
     name:
-        label: waka.session::wakasession.name
+        label: waka.session::lang.wakasession.name
         span: auto
     key_duration:
-        label: waka.session::wakasession.key_duration
+        label: waka.session::lang.wakasession.key_duration
         span: auto
         type: dropdown
         placeholder: waka.utils::lang.global.placeholder
         options: listDurations
     has_ds:
-        label: waka.session::wakasession.has_ds
+        label: waka.session::lang.wakasession.has_ds
         span: left
         type: switch
     _warn_ds@update:
         type: hint
         path: ~/plugins/waka/session/models/wakasession/hint.htm
     data_source:
-        label: waka.session::wakasession.data_source
+        label: waka.session::lang.wakasession.data_source
         span: left
         type: dropdown
         placeholder: waka.utils::lang.global.placeholder
@@ -30,7 +30,7 @@ fields:
             field: has_ds
             condition: checked
     ds_id_test:
-        label: waka.session::wakasession.ds_id_test
+        label: waka.session::lang.wakasession.ds_id_test
         span: right
         type: wakafinder
         dependsOn: [data_source]
@@ -47,15 +47,15 @@ fields:
             field: has_ds
             condition: checked
     embed_all_ds:
-        label: waka.session::wakasession.embed_all_ds
+        label: waka.session::lang.wakasession.embed_all_ds
         span: full
         type: checkbox
-        comment: waka.session::wakasession.embed_all_ds_com
+        comment: waka.session::lang.wakasession.embed_all_ds_com
     mapping:
-        label: waka.session::wakasession.mapping
+        label: waka.session::lang.wakasession.mapping
         span: full
         type: codeeditor
         language: yaml
     url:
-        label: waka.session::wakasession.url
+        label: waka.session::lang.wakasession.url
         span: auto

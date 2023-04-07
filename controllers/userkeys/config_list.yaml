@@ -9,7 +9,7 @@ list: $/waka/session/models/userkey/columns.yaml
 modelClass: Waka\Session\Models\UserKey
 
 # List Title
-title: waka.session::userkey.title
+title: waka.session::lang.userkey.title
 
 # Link URL for each record
 recordUrl: waka/session/userkeys/update/:id

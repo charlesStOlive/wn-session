@@ -3,7 +3,7 @@
 # ===================================
 
 # Record name
-name: waka.session::wakasession.form_name
+name: waka.session::lang.wakasession.form_name
 
 # Model Form Field configuration
 form: $/waka/session/models/wakasession/fields.yaml
@@ -16,17 +16,17 @@ defaultRedirect: waka/session/wakasessions
 
 # Create page
 create:
-    title: waka.session::wakasession.create
+    title: waka.session::lang.wakasession.create
     redirect: waka/session/wakasessions/update/:id
     redirectClose: waka/session/wakasessions
     form: $/waka/session/models/wakasession/fields_create.yaml
 
 # Update page
 update:
-    title: waka.session::wakasession.update
+    title: waka.session::lang.wakasession.update
     redirect: waka/session/wakasessions/update/:id
     redirectClose: waka/session/wakasessions
 
 # Preview page
 preview:
-    title: waka.session::wakasession.preview_name
+    title: waka.session::lang.wakasession.preview_name

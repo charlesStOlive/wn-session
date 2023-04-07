@@ -4,51 +4,51 @@
 
 fields:
     name:
-        label: waka.session::userkey.name
+        label: waka.session::lang.userkey.name
         span: auto
     slug:
-        label: waka.session::userkey.slug
+        label: waka.session::lang.userkey.slug
         span: auto
     key_end_at:
-        label: waka.session::userkey.key_end_at
+        label: waka.session::lang.userkey.key_end_at
         span: auto
         type: datepicker
         mode: date
         ignoreTimezone: true
     waka_session:
-        label: waka.session::userkey.waka_session
+        label: waka.session::lang.userkey.waka_session
         span: auto
         type: relation
         placeholder: waka.utils::lang.global.placeholder
         nameFrom: name
     owner:
-        label: waka.session::userkey.owner
+        label: waka.session::lang.userkey.owner
         span: auto
     secret:
-        label: waka.session::userkey.secret
+        label: waka.session::lang.userkey.secret
         span: auto
     _dataToString:
-        label: waka.session::userkey._dataToString
+        label: waka.session::lang.userkey._dataToString
         span: auto
         type: codeeditor
         language: yaml
     file:
-        label: waka.session::userkey.file
+        label: waka.session::lang.userkey.file
         span: left
         type: fileupload
         mode: file
     files:
-        label: waka.session::userkey.files
+        label: waka.session::lang.userkey.files
         span: right
         type: fileupload
         mode: file
     image:
-        label: waka.session::userkey.image
+        label: waka.session::lang.userkey.image
         span: left
         type: fileupload
         mode: image
     images:
-        label: waka.session::userkey.images
+        label: waka.session::lang.userkey.images
         span: right
         type: fileupload
         mode: image

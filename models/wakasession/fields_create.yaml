@@ -4,10 +4,10 @@
 
 fields:
     url:
-        label: waka.session::wakasession.url
+        label: waka.session::lang.wakasession.url
         span: auto
     key_duration:
-        label: waka.session::wakasession.key_duration
+        label: waka.session::lang.wakasession.key_duration
         span: auto
         type: dropdown
         placeholder: waka.utils::lang.global.placeholder

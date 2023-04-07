@@ -9,7 +9,7 @@ list: $/waka/session/models/wakasession/columns.yaml
 modelClass: Waka\Session\Models\WakaSession
 
 # List Title
-title: waka.session::wakasession.title
+title: waka.session::lang.wakasession.title
 
 # Link URL for each record
 recordUrl: waka/session/wakasessions/update/:id

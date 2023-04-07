@@ -11,8 +11,8 @@ workflow: false
 breadcrump:
     inSettings: true 
     indexUrl: waka/session/userkeys
-    indexlabel: waka.session::userkey.title
-    title: waka.session::userkey.form_name
+    indexlabel: waka.session::lang.userkey.title
+    title: waka.session::lang.userkey.form_name
 
 ###TOOL_BAR
 tool_bar:
@@ -62,8 +62,8 @@ action_bar:
 # breadcrump:
 #     inSettings: true 
 #     indexUrl: waka/session/userkeys
-#     indexlabel: waka.session::userkey.title
-#     title: waka.session::userkey.form_name
+#     indexlabel: waka.session::lang.userkey.title
+#     title: waka.session::lang.userkey.form_name
 
 # ###TOOL_BAR
 # tool_bar:
